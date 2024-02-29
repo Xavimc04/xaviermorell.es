@@ -1,0 +1,22 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    font-family: figtree; 
+    overflow-x: hidden;
+}
+
+*:focus {
+    outline: transparent;
+} 
+
+*::-webkit-scrollbar {
+    display: none !important;
+}
+
+* {
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+}
