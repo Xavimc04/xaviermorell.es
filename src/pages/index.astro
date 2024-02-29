@@ -5,8 +5,8 @@ import Template from "../layouts/template.astro";
 ---
 
 <Template>
-	<section id="header" class="flex-1 w-1/2 flex gap-4 items-center">
-		<article class="flex fade-in flex-col gap-3 w-1/2">
+	<section id="header" class="flex-1 w-full px-10 md:px-0 md:w-2/3 lg:w-3/4 xl:w-2/3 flex flex-col lg:flex-row gap-4 items-center xl:justify-between">
+		<article class="flex fade-in flex-col gap-3 w-full lg:w-1/2 py-20 lg:py-0 overflow-hidden">
 			<p class="text-gray-400">
 				Bienvenido a mi sitio web personal
 			</p>
@@ -22,7 +22,7 @@ import Template from "../layouts/template.astro";
 
 		<img 
 			draggable="false"
-			class="w-2/3 h-2/3"
+			class="w-full lg:w-1/2"
 			src="https://static.vecteezy.com/system/resources/previews/011/153/363/original/3d-web-developer-working-on-project-illustration-png.png"
 		/>
 	</section>
