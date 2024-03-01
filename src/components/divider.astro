@@ -1,0 +1,19 @@
+--- 
+
+const {
+    index, 
+    content
+} = Astro.props;
+
+---
+
+
+<article class="mb-12 text-center md:mb-0 px-16 dark:md:border-slate-500 flex flex-col gap-3">
+    <h2 class="font-heading text-[2.6rem] font-bold dark:text-white lg:text-5xl xl:text-6xl">
+        { index }
+    </h2>
+
+    <p class="text-sm font-medium uppercase tracking-widest text-gray-500 lg:text-base">
+        { content }
+    </p>
+</article>

@@ -1,6 +1,7 @@
 --- 
 
 import Stack from "../components/stack.astro";
+import Divider from "../components/divider.astro";
 import Template from "../layouts/template.astro";
 
 ---
@@ -27,6 +28,14 @@ import Template from "../layouts/template.astro";
 			src="https://static.vecteezy.com/system/resources/previews/011/153/363/original/3d-web-developer-working-on-project-illustration-png.png"
 		/>
 	</section>
+
+	<section id="counter" class="w-full mb-40 px-10 md:px-0 md:w-2/3 lg:w-3/4 xl:w-2/3 flex flex-col lg:flex-row justify-center mt-32 lg:mt-0 divide-x-0 lg:divide-x-2">
+		<Divider index="+5" content="Años de experiencia" />
+		<Divider index="+40" content="Proyectos realizados" />
+		<Divider index="+10" content="Tecnologías dominadas" />
+	</section>
+
+	<!-- Meter soft skills con una imagen a la izquierda y a la derecha un listado de puntos con las habilidades. -->
 
 	<Stack />
 </Template>
