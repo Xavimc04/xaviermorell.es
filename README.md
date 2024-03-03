@@ -27,3 +27,4 @@ npx astro-i18next generate
 - Featured projects
 - Github link
 - Linkedin link
+- Theme selector
