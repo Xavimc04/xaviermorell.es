@@ -1,0 +1,52 @@
+---
+
+const skills = [
+    {
+      "label": "Comunicación efectiva",
+      "content": "Capacidad para expresar ideas de manera clara y comprensible, facilitando la colaboración y el entendimiento en equipos multidisciplinarios."
+    },
+    {
+      "label": "Trabajo en equipo",
+      "content": "Habilidad para colaborar armoniosamente con otros miembros del equipo, compartiendo conocimientos y habilidades para alcanzar objetivos comunes."
+    },
+    {
+      "label": "Resolución de problemas",
+      "content": "Destreza en identificar, analizar y resolver desafíos de manera eficiente, utilizando un enfoque lógico y creativo para encontrar soluciones efectivas."
+    },
+    {
+      "label": "Adaptabilidad",
+      "content": "Capacidad para ajustarse y prosperar en entornos cambiantes, abrazando nuevos desafíos y aprendiendo rápidamente para mantenerse actualizado en un mundo tecnológico dinámico."
+    },
+    {
+      "label": "Pensamiento crítico",
+      "content": "Habilidad para evaluar información de manera objetiva, analizar situaciones desde diferentes perspectivas y tomar decisiones fundamentadas que contribuyan al éxito del proyecto."
+    }
+]
+
+---
+
+<section id="skills" class="mt-10 flex flex-col gap-6">
+    {
+        skills.map(skill => {
+            const {
+                label, content
+            } = skill; 
+
+            return <details name="skills flex flex-col gap-4 [&_svg]:open:-rotate-180">
+                <summary class="text-xl cursor-pointer transition-all list-none flex gap-4 items-center">
+                    <div> 
+                        <svg class="rotate-0 transform text-orange-500 transition-all duration-300" fill="none" height="20" width="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </div>
+
+                    { label }
+                </summary>
+                
+                <p class="text-gray-400 mt-5">
+                    { content }
+                </p>  
+            </details>
+        })
+    }
+</section>

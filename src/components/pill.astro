@@ -1,0 +1,11 @@
+--- 
+
+const { ball, box } = Astro.props
+
+---
+
+<div class={ `border text-sm px-2 py-1 rounded-full flex items-center gap-2 ${ box }` }>
+    <div class={ `h-3 w-3 rounded-full ${ ball }` }></div>
+
+    <slot />
+</div>
