@@ -26,11 +26,11 @@ import ProfileImage from './../../public/assets/images/profile.jpg'
         </p>
 
         <section class="mt-3 flex items-center gap-3">
-            <Pill ball="bg-indigo-500" box="bg-indigo-500/10 border-indigo-500" >
+            <Pill id="cv" ball="bg-indigo-500 group-hover:bg-indigo-700 transition-all" box="bg-indigo-500/10 group border-indigo-500 cursor-pointer select-none hover:border-indigo-700 transition-all">
                 Descargar CV
             </Pill>
 
-            <Pill ball="bg-yellow-500" box="bg-yellow-500/10 border-yellow-500" >
+            <Pill id="contact" ball="bg-yellow-500 group-hover:bg-yellow-700 transition-all" box="bg-yellow-500/10 group border-yellow-500 cursor-pointer select-none hover:border-yellow-700 transition-all">
                 Contáctame
             </Pill>
         </section>
@@ -44,3 +44,15 @@ import ProfileImage from './../../public/assets/images/profile.jpg'
 <div class="flex lg:hidden w-full md:w-2/3 mb-32 px-10 md:px-0 md:mb-32">
     <Softskills />
 </div>
+
+<script>
+    // @ Download CV
+    const $cv = document.getElementById('cv'); 
+
+    $cv.addEventListener('click', () => window.open('assets/cv.pdf'))
+
+    // @ Mail
+    const $contact = document.getElementById('contact'); 
+
+    $contact.addEventListener('click', () => window.open('mailto:xmcampos@outlook.com'))
+</script>
