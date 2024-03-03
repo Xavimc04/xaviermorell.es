@@ -1,8 +1,8 @@
 ---
 
 import Linkedin from './icons/linkedin.astro'
-
-
+import { LanguageSelector } from "astro-i18next/components"; 
+import { t } from "i18next";
 
 ---
 
@@ -20,9 +20,14 @@ import Linkedin from './icons/linkedin.astro'
 
     <!-- @ Url section -->
     <ul id="urls" class="hidden lg:flex items-center justify-center w-2/4 gap-6">
-        <li><a href="#">Sobre mí</a></li>
-        <li><a href="#">Proyectos</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="#">{ t('components.header.urls.about') }</a></li>
+        <li><a href="#">{ t('components.header.urls.projects') }</a></li>
+        <li><a href="#">{ t('components.header.urls.contact') }</a></li>
+        
+        <!-- @ Translation selector -->
+        <li>
+            <LanguageSelector showFlag={ true } class="bg-transparent" />
+        </li>
     </ul>
 
     <!-- @ Right section -->

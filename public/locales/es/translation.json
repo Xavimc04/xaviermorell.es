@@ -1,0 +1,11 @@
+{
+    "components": {
+        "header": {
+            "urls": {
+                "about": "Sobre mí", 
+                "projects": "Proyectos", 
+                "contact": "Contacto"
+            }
+        }
+    }
+}
