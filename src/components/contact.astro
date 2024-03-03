@@ -12,8 +12,8 @@ import Github from './../components/icons/github.astro'
         Contáctame
     </h2>
 
-    <div class="flex items-start gap-7">
-        <article class="flex-1 flex flex-col gap-5">
+    <div class="flex items-start gap-7 flex-col lg:flex-row">
+        <article class="flex-1 flex flex-col gap-5 mb-10 lg:mb-0">
             <p class="text-gray-400">
                 En caso de querer contactar conmigo puedes rellenar este formulario, con 3 simples campos me pondré en contacto contigo con la mayor brevedad posible. En cualquiera de los casos, ¡te dejo otros medios de contacto desde los que podrás encontrarme!
             </p>
@@ -24,10 +24,10 @@ import Github from './../components/icons/github.astro'
             </div>
         </article>
 
-        <form class="w-1/2 flex flex-col gap-8">
+        <form class="w-full lg:w-1/2 flex flex-col gap-8">
             <label class="flex flex-col gap-3">
                 <p>
-                    Nombre <span class="text-emerald-500">*</span>
+                    Nombre <span class="text-yellow-500">*</span>
                 </p>
 
                 <input
@@ -39,13 +39,13 @@ import Github from './../components/icons/github.astro'
 
             <label class="flex flex-col gap-3">
                 <p>
-                    Dirección de correo <span class="text-emerald-500">*</span>
+                    Dirección de correo <span class="text-yellow-500">*</span>
                 </p>
 
                 <input
                     type="email"
-                    class="border bg-transparent p-3"
-                    placeholder="Introduce tu correo rounded-sm"
+                    class="border bg-transparent p-3 rounded-sm"
+                    placeholder="Introduce tu correo"
                 />
             </label>
 
