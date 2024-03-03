@@ -1,15 +1,17 @@
 ---
 
+import { Image } from 'astro:assets';
 import Pill from './pill.astro'
 import Softskills from './softskills.astro'
+import ProfileImage from './../../public/assets/images/profile.jpg'
 
 ---
 
 <section id="about" class="w-full px-10 mb-12 lg:mb-32 md:px-0 md:w-2/3 lg:w-3/4 xl:w-2/3 flex flex-col md:flex-row gap-12">
-    <img 
-        src="/assets/images/profile.jpg"
+    <Image 
+        src={ ProfileImage }
         alt=""
-        class="h-28 md:h-80 rounded object-contain self-start"
+        class="w-16 md:w-60 rounded object-contain self-start bg-red-500"
     />
 
     <article class="flex flex-1 flex-col gap-2">
