@@ -5,6 +5,8 @@ import Pill from "../components/pill.astro";
 import About from "../components/about.astro";
 import Divider from "../components/divider.astro";
 import Template from "../layouts/template.astro";
+import Linkedin from './../components/icons/linkedin.astro'
+import Github from './../components/icons/github.astro'
 
 ---
 
@@ -23,11 +25,11 @@ import Template from "../layouts/template.astro";
 				Nacido y residente en Barcelona, especializado en el desarrollo integral de aplicaciones web y móviles. Fanático de la tecnología y el desarrollo de software.
 			</p>
 
-			<section class="mt-3 flex">
-				<Pill ball="bg-green-500" box="bg-green-500/10 border-green-500" >
-					Empleado
-				</Pill>
+			<section class="mt-3 flex gap-4"> 
+				<Linkedin />
+				<Github />
 			</section>
+
 		</article>
 
 		<img 
