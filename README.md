@@ -24,3 +24,4 @@ npx astro-i18next generate
 
 - Send emails with resend API + Contact form  
 - Featured projects
+- Companies i worked with
