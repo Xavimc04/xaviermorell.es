@@ -23,9 +23,7 @@ npx astro-i18next generate
 ## Working on features
 
 - Download CV
-- Send emails with resend API + Contact form
-- Current status pills
-- Softskills
+- Send emails with resend API + Contact form  
 - Featured projects
 - Github link
 - Linkedin link
