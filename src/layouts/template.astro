@@ -1,11 +1,14 @@
 --- 
 
 import Navigator from "../components/navigator.astro"
+import i18next from "i18next";
+import { HeadHrefLangs } from "astro-i18next/components";
 
 --- 
 
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang={ i18next.language }>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +17,8 @@ import Navigator from "../components/navigator.astro"
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" /> 
         <link rel="stylesheet" href="styles.css">
         <title>Xavier Morell | Portfolio</title>
+
+        <HeadHrefLangs />
     </head>
 
     <body class="text-white flex flex-col min-h-screen items-center mb-20">
