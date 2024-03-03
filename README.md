@@ -8,3 +8,24 @@ Welcome to my portfolio! I am Xavier Morell, a passionate fullstack developer wi
 
 - **Tailwind CSS:** For the design and styling of my projects, I rely on Tailwind CSS. This tool allows me to write styles efficiently and maintain clean code while offering a wide range of utilities for creating modern interfaces.
 
+## Translations 
+
+Customize languages from public/locales/[prefix]/translation.json
+
+Add a new locale on [route]/astro-i18next.config.mjs
+
+Run follow command to generate routes
+
+```
+npx astro-i18next generate
+```
+
+## Working on features
+
+- Download CV
+- Send emails with resend API + Contact form
+- Current status pills
+- Softskills
+- Featured projects
+- Github link
+- Linkedin link
