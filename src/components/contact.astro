@@ -4,7 +4,19 @@ import Linkedin from './../components/icons/linkedin.astro'
 import Github from './../components/icons/github.astro'
 import Email from './../lib/resend'
 
-await Email()
+if(Astro.request.method === 'POST') {
+    try {
+        const data = await Astro.request.formData(); 
+
+        const name = data.get('name') as string
+        const email = data.get('email') as string
+        const reason = data.get('reason') as string
+
+        if(name && email && reason) await Email(name, email, reason);
+    } catch (error) {
+        console.log(error)
+    }
+}
 
 ---
 
@@ -29,6 +41,7 @@ await Email()
 
         <form 
             class="w-full lg:w-1/2 flex flex-col gap-8"
+            method="POST"
         >
             <label class="flex flex-col gap-3">
                 <p>
@@ -39,6 +52,7 @@ await Email()
                     type="text"
                     class="border bg-transparent p-3 rounded-sm"
                     placeholder="Introduce tu nombre"
+                    name="name"
                 />
             </label>
 
@@ -51,6 +65,7 @@ await Email()
                     type="email"
                     class="border bg-transparent p-3 rounded-sm"
                     placeholder="Introduce tu correo"
+                    name="email"
                 />
             </label>
 
@@ -59,7 +74,7 @@ await Email()
                     Motivo
                 </p>
 
-                <textarea class="border bg-transparent p-3 rounded-sm" placeholder="..."></textarea>
+                <textarea class="border bg-transparent p-3 rounded-sm" name="reason" placeholder="..."></textarea>
             </label>
 
             <button type="submit" class="p-3 border bg-blue-600 border-blue-600 hover:opacity-90 transition-all text-white rounded-sm">
