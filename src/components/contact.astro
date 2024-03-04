@@ -42,6 +42,9 @@ if(Astro.request.method === 'POST') {
         <form 
             class="w-full lg:w-1/2 flex flex-col gap-8"
             method="POST"
+            onsubmit="(e) => {
+                e.preventDefault();
+            }"
         >
             <label class="flex flex-col gap-3">
                 <p>
