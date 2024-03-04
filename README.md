@@ -22,7 +22,6 @@ npx astro-i18next generate
 
 ## Working on features
 
-- Send emails with resend API + Contact form  
 - Featured projects
 - Companies i worked with
 - Image optimization
