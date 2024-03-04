@@ -1,0 +1,67 @@
+---
+
+import ExperienceCategory from './experience-category.astro'
+import Avannubo from './../../public/assets/images/avannubo.png'
+import Monlau from './../../public/assets/images/monlau.png'
+import Sosmatic from './../../public/assets/images/sosmatic.png'
+
+const elements = [
+    {
+        type: "work",
+        company: "Avannubo",
+        position: "Desarrollador Fullstack",
+        icon: Avannubo,
+        date: "Febrero 2023 - Actualidad",
+        description: "En mi trayectoria como desarrollador fullstack, inicié mi recorrido enfocándome en el desarrollo de aplicaciones internas para la empresa. A medida que adquiría experiencia, amplié mi alcance hacia la creación integral de aplicativos para clientes externos. Progresivamente, asumí roles más complejos, desempeñando funciones que incluían la gestión de tareas, la toma de requisitos y el desarrollo completo de plataformas.",
+        color: "text-red-400"
+    },
+    {
+        type: "work", 
+        company: "SOSMatic", 
+        position: "Helpdesk",
+        icon: Sosmatic,
+        date: "Octubre 2022 - Febrero 2023",
+        description: "Durante mi experiencia laboral, desempeñé el rol de soporte de helpdesk, gestionando llamadas y reportes de incidencias de nivel 1 para múltiples compañías subcontratadas. Mi responsabilidad abarcaba más de 7 servicios, cada uno perteneciente a empresas diversas. Mis tareas incluían la resolución de problemas relacionados con fibra óptica, radioenlace, roaming, datos móviles, consultas sobre servicios, y telefonía fija, entre otros.",
+        color: "text-blue-400"
+    },
+    {
+        type: "education", 
+        company: "Monlau Formación Profesional", 
+        icon: Monlau,
+        date: "Septiembre 2021 - Junio 2023",
+        description: "En mi travesía hacia el desarrollo de aplicaciones web, previamente me embarqué en un camino autodidacta que abarcó más de 2 años. Durante este tiempo, me sumergí en la exploración independiente de lenguajes de programación, frameworks y metodologías de desarrollo. A medida que adquiría experiencia, comprendí la importancia de formalizar mis conocimientos y habilidades para acceder al mercado laboral de manera más sólida. Fue en este contexto que decidí ingresar al ciclo de desarrollo de aplicaciones web. Mi objetivo principal era complementar mi aprendizaje autodidacta con una formación más estructurada y académica",
+        color: "text-blue-400"
+    },
+    {
+        type: "education", 
+        company: "Monlau Formación Profesional", 
+        icon: Monlau,
+        date: "Septiembre 2019 - Junio 2021",
+        description: "Durante mi formación en sistemas microinformáticos y redes, adquirí habilidades especializadas en la configuración y mantenimiento de sistemas, así como en la gestión de redes. Este ciclo me proporcionó un profundo entendimiento de la infraestructura microinformática, desde la resolución de problemas en hardware hasta la implementación de soluciones de red.",
+        color: "text-blue-400"
+    }
+]
+
+---
+
+<section id="experience" class="w-full px-10 md:px-0 md:w-2/3 lg:w-3/4 xl:w-2/3 flex flex-col xl:flex-row mb-32 gap-32">
+    <div class="flex-1 flex flex-col gap-10">
+        <h2 class="text-5xl font-bold py-3">
+            Experiencia <span class="underline underline-offset-3 decoration-8 decoration-blue-600">laboral</span>
+        </h2>
+    
+        <ExperienceCategory 
+            elements={elements.filter(e => e.type === "work")}
+        />
+    </div>
+
+    <div class="flex-1 flex flex-col gap-7">
+        <h2 class="text-5xl font-bold py-3">
+            Formación <span class="underline underline-offset-3 decoration-8 decoration-blue-600">profesional</span>
+        </h2>
+    
+        <ExperienceCategory 
+            elements={elements.filter(e => e.type === "education")}
+        />
+    </div>
+</section>

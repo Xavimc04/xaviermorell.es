@@ -1,0 +1,50 @@
+---
+import { Image } from "astro:assets"
+ 
+
+interface Element {
+    type: string, 
+    company: string, 
+    position?: string, 
+    icon: any, 
+    date: string, 
+    description: string,
+    color: string
+}
+
+const { elements } = Astro.props
+
+---
+
+{
+    elements.map((element: Element) => {
+        const {
+            company, 
+            position, 
+            icon, 
+            date, 
+            description,
+            color
+        } = element
+
+        return <article class="flex flex-col gap-4">
+            <section class="flex items-center gap-4">
+                <Image 
+                    src={ icon } 
+                    alt={ company } 
+                    class="rounded w-12"
+                />
+
+                <div class="flex flex-col">
+                    <h3 class="text-2xl">{ company }</h3>
+
+                    <h4 class={ color }>
+                        { position ? `${ position }, ` : '' } { date }    
+                    </h4>
+                </div>
+            </section>
+
+            <p class="text-gray-400">{ description }</p>
+        </article>
+    })
+}
