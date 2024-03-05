@@ -13,6 +13,12 @@
             "years_of_experience": "Años de experiencia",
             "projects_completed": "Proyectos completados",
             "technologies": "Tecnologías dominadas"
+        },
+        "about": {
+            "title": "Sobre <0>mí</0>",
+            "content": "Desde los 15 años, he estado inmerso en el mundo de la programación, contribuyendo a proyectos innovadores. Actualmente, formo parte de un equipo dinámico donde diseño y desarrollo soluciones tecnológicas. Barcelona ha sido mi inspiración, y mi enfoque fullstack me ha permitido abordar desafíos desde la interfaz de usuario hasta la lógica del servidor. Me apasiona la tecnología, la colaboración en equipos multidisciplinarios y la constante mejora profesional.",
+            "download_cv": "Descargar CV", 
+            "contact_me": "Contáctame"
         }
     },
     "pages": {
