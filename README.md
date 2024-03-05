@@ -22,6 +22,5 @@ npx astro-i18next generate
 
 ## Working on features
 
-- Featured projects
 - Image optimization
 - Footer
