@@ -8,6 +8,11 @@
                 "skills": "Conocimientos",
                 "contact": "Contacto"
             }
+        },
+        "divider": {
+            "years_of_experience": "Años de experiencia",
+            "projects_completed": "Proyectos completados",
+            "technologies": "Tecnologías dominadas"
         }
     },
     "pages": {
