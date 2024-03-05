@@ -94,6 +94,22 @@
                 "url": "Ver proyecto",
                 "source": "Ver código fuente"
             }
+        },
+        "stack": {
+            "title": "Tecnologías y frame<0>works</0>",
+            "description": "Estas son parte las tecnologías, lenguajes y frameworks que mas he consumido durante mis años de experiencia."
+        },
+        "contact": {
+            "title": "Contáctame",
+            "description": "En caso de querer contactar conmigo puedes rellenar este formulario, con 3 simples campos me pondré en contacto contigo con la mayor brevedad posible. En cualquiera de los casos, ¡te dejo otros medios de contacto desde los que podrás encontrarme!",
+            "form": {
+                "name": "Nombre",
+                "email": "Correo electrónico", 
+                "reason": "Motivo",
+                "submit": "Enviar",
+                "placeholder_name": "Introduce tu nombre",
+                "placeholder_email": "Introduce tu correo electrónico"
+            }
         }
     },
     "pages": {

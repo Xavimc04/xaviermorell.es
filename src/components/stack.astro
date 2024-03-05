@@ -11,16 +11,20 @@ import Lua from './icons/lua.astro'
 import MySQL from './icons/mysql.astro'
 import Postgres from './icons/postgres.astro'
 import Typescript from './icons/typescript.astro'
+import { Trans } from 'astro-i18next/components'
+import { t } from "i18next"
 
 ---
 
 <section id="stack" class="w-full px-10 md:px-0 md:w-2/3 lg:w-3/4 xl:w-2/3 flex flex-col gap-2 mb-32">
     <h2 class="text-5xl font-bold py-3">
-        Tecnologías y Frame<span class="underline underline-offset-3 decoration-8 decoration-blue-600">works</span>
+        <Trans i18nKey='components.stack.title'>
+            Tecnologías y Frame<span class="underline underline-offset-3 decoration-8 decoration-blue-600">works</span>
+        </Trans>
     </h2>
 
     <p class="text-gray-400">
-        Estas son parte las tecnologías, lenguajes y frameworks que mas he consumido durante mis años de experiencia. 
+        { t('components.stack.description') }
     </p>
 
     <section class="flex gap-7 justify-center lg:justify-start flex-wrap mt-14 py-16 lg:bg-gradient-to-r from-transparent via-slate-900 to-transparent">

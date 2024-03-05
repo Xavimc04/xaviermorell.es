@@ -3,6 +3,7 @@
 import Linkedin from './../components/icons/linkedin.astro'
 import Github from './../components/icons/github.astro'
 import Email from './../lib/resend'
+import { t } from 'i18next'
 
 if(Astro.request.method === 'POST') {
     try {
@@ -24,13 +25,13 @@ if(Astro.request.method === 'POST') {
     <div class="h-2 w-32 bg-blue-600"></div>
 
     <h2 class="text-5xl font-bold py-3">
-        Contáctame
+        { t('components.contact.title') }
     </h2>
 
     <div class="flex items-start gap-7 flex-col lg:flex-row">
         <article class="flex-1 flex flex-col gap-5 mb-10 lg:mb-0">
             <p class="text-gray-400">
-                En caso de querer contactar conmigo puedes rellenar este formulario, con 3 simples campos me pondré en contacto contigo con la mayor brevedad posible. En cualquiera de los casos, ¡te dejo otros medios de contacto desde los que podrás encontrarme!
+                { t('components.contact.description') }
             </p>
 
             <div class="flex items-center gap-4">
@@ -46,40 +47,40 @@ if(Astro.request.method === 'POST') {
         >
             <label class="flex flex-col gap-3">
                 <p>
-                    Nombre <span class="text-yellow-500">*</span>
+                    { t('components.contact.form.name') } <span class="text-yellow-500">*</span>
                 </p>
 
                 <input
                     type="text"
                     class="border bg-transparent p-3 rounded-sm"
-                    placeholder="Introduce tu nombre"
+                    placeholder={ t('components.contact.form.placeholder_name') }
                     name="name"
                 />
             </label>
 
             <label class="flex flex-col gap-3">
                 <p>
-                    Dirección de correo <span class="text-yellow-500">*</span>
+                    { t('components.contact.form.email') } <span class="text-yellow-500">*</span>
                 </p>
 
                 <input
                     type="email"
                     class="border bg-transparent p-3 rounded-sm"
-                    placeholder="Introduce tu correo"
+                    placeholder={ t('components.contact.form.placeholder_email') }
                     name="email"
                 />
             </label>
 
             <label class="flex flex-col gap-3">
                 <p>
-                    Motivo
+                    { t('components.contact.form.reason') }
                 </p>
 
                 <textarea class="border bg-transparent p-3 rounded-sm" name="reason" placeholder="..."></textarea>
             </label>
 
             <button type="submit" class="p-3 border bg-blue-600 border-blue-600 hover:opacity-90 transition-all text-white rounded-sm">
-                Enviar
+                { t('components.contact.form.submit') }
             </button>
         </form>
     </div>
