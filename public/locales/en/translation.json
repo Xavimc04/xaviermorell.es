@@ -1,0 +1,122 @@
+{
+    "components": {
+        "header": {
+            "urls": {
+                "about": "About me",
+                "experience": "Experience",
+                "projects": "Projects",
+                "skills": "Skills",
+                "contact": "Contact"
+            }
+        },
+        "divider": {
+            "years_of_experience": "Years of experience",
+            "projects_completed": "Projects completed",
+            "technologies": "Mastered technologies"
+        },
+        "about": {
+            "title": "About <0>me</0>",
+            "content": "Since the age of 15, I have been immersed in the world of programming, contributing to innovative projects. Currently, I am part of a dynamic team where I design and develop technological solutions. Barcelona has been my inspiration, and my full-stack approach has allowed me to tackle challenges from the user interface to server logic. I am passionate about technology, collaboration in multidisciplinary teams, and continuous professional improvement.",
+            "download_cv": "Download CV",
+            "contact_me": "Contact me"
+        },
+        "softskills": {
+            "comunication": {
+                "title": "Effective communication",
+                "content": "Ability to convey ideas clearly and concisely, in both English and Spanish."
+            },
+            "teamwork": {
+                "title": "Teamwork",
+                "content": "Experience in multidisciplinary teams, with skills in leading and collaborating."
+            },
+            "problem_solving": {
+                "title": "Problem solving",
+                "content": "Ability to identify and solve problems efficiently and effectively."
+            },
+            "creativity": {
+                "title": "Creativity",
+                "content": "Ability to contribute innovative ideas and creative solutions to projects."
+            },
+            "critical_thinking": {
+                "title": "Critical thinking",
+                "content": "Ability to analyze and evaluate complex situations and make informed decisions."
+            }
+        },
+        "experience": {
+            "working": "Work <0>experience</0>",
+            "educational": "Educational <0>experience</0>",
+            "elements": {
+                "avannubo": {
+                    "position": "Fullstack Developer",
+                    "date": "February 2023 - Present",
+                    "description": "In my journey as a fullstack developer, I began by focusing on the development of internal applications for the company. As I gained experience, I expanded my scope to the comprehensive creation of applications for external clients. Progressively, I took on more complex roles, performing tasks that included task management, requirements gathering, and the complete development of platforms."
+                },
+                "sosmatic": {
+                    "position": "Helpdesk",
+                    "date": "October 2022 - February 2023",
+                    "description": "During my work experience, I played the role of helpdesk support, managing calls and incident reports for level 1 issues for multiple subcontracted companies. My responsibility covered over 7 services, each belonging to diverse companies. My tasks included problem resolution related to fiber optics, radio links, roaming, mobile data, service inquiries, and fixed-line telephony, among others."
+                },
+                "freelancer": {
+                    "position": "Developer",
+                    "date": "October 2020 - October 2022",
+                    "description": "After immersing myself in the development field, I started my journey as a freelancer while continuing my education. I provided services to clients on the Cfx.re platform, also known as FiveM. In this context, I developed Lua scripts aimed at enhancing the gaming experience in the roleplay environment. Over time, I expanded my skills by integrating complex web interfaces synchronized with the game using jQuery and ReactJs. Simultaneously, I designed external platforms for game server management. At a certain point, I decided to make the full leap into web development, which involved closing my services as a freelancer to dedicate my time exclusively to the learning process."
+                },
+                "smx": {
+                    "position": "Microcomputer Systems and Networks",
+                    "date": "September 2019 - June 2021",
+                    "description": "During my training in microcomputer systems and networks, I acquired specialized skills in the configuration and maintenance of systems, as well as in network management. This cycle provided me with a deep understanding of microcomputer infrastructure, from problem-solving in hardware to the implementation of network solutions."
+                },
+                "daw": {
+                    "position": "Web Application Development",
+                    "date": "September 2021 - June 2023",
+                    "description": "In my journey toward web application development, I initially embarked on a self-taught path that spanned over 2 years. During this time, I immersed myself in the independent exploration of programming languages, frameworks, and development methodologies. As I gained experience, I understood the importance of formalizing my knowledge and skills to enter the job market more solidly. It was in this context that I decided to enter the web application development cycle. My main goal was to complement my self-taught learning with a more structured and academic training."
+                }
+            }
+        },
+        "projects": {
+            "title": "Featured <0>projects</0>",
+            "description": "My latest featured projects, for privacy reasons, I cannot show all the projects I have worked on professionally.",
+            "status": {
+                "working_on": "In development",
+                "done": "Completed"
+            },
+            "elements": {
+                "portal": {
+                    "title": "Enterprise Portal",
+                    "description": "Application for simulated management of companies and market environments in collaboration with Monlau Group."
+                },
+                "codishare": {
+                    "title": "Codishare",
+                    "description": "An open-source platform for sharing and collaborating on development projects."
+                }
+            },
+            "actions": {
+                "url": "View project",
+                "source": "View source code"
+            }
+        },
+        "stack": {
+            "title": "Technologies and frame<0>works</0>",
+            "description": "These are some of the technologies, languages, and frameworks that I have consumed the most during my years of experience."
+        },
+        "contact": {
+            "title": "Contact me",
+            "description": "If you want to get in touch with me, you can fill out this form. With just 3 simple fields, I will contact you as soon as possible. In any case, I leave you other contact methods through which you can find me!",
+            "form": {
+                "name": "Name",
+                "email": "Email",
+                "reason": "Reason",
+                "submit": "Submit",
+                "placeholder_name": "Enter your name",
+                "placeholder_email": "Enter your email"
+            }
+        }
+    },
+    "pages": {
+        "index": {
+            "welcome": "Welcome to my personal website",
+            "title": "I am <0>Xavier Morell</0>, a <1>fullstack</1> developer",
+            "subtitle": "Born and resident in Barcelona, specialized in the comprehensive development of web and mobile applications. A technology and software development enthusiast."
+        }
+    }
+}
