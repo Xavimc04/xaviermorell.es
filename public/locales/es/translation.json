@@ -1,13 +1,5 @@
 {
     "components": {
-        "header": {
-            "urls": {
-                "about": "Sobre mí", 
-                "experience": "Experiencia",
-                "projects": "Proyectos", 
-                "skills": "Conocimientos",
-                "contact": "Contacto"
-            }
-        }
+        
     }
 }
