@@ -19,6 +19,28 @@
             "content": "Desde los 15 años, he estado inmerso en el mundo de la programación, contribuyendo a proyectos innovadores. Actualmente, formo parte de un equipo dinámico donde diseño y desarrollo soluciones tecnológicas. Barcelona ha sido mi inspiración, y mi enfoque fullstack me ha permitido abordar desafíos desde la interfaz de usuario hasta la lógica del servidor. Me apasiona la tecnología, la colaboración en equipos multidisciplinarios y la constante mejora profesional.",
             "download_cv": "Descargar CV", 
             "contact_me": "Contáctame"
+        },
+        "softskills": {
+            "comunication": {
+                "title": "Comunicación efectiva", 
+                "content": "Capacidad para transmitir ideas de manera clara y concisa, tanto en inglés como en español."
+            },
+            "teamwork": {
+                "title": "Trabajo en equipo", 
+                "content": "Experiencia en equipos multidisciplinarios, con habilidades para liderar y colaborar."
+            },
+            "problem_solving": {
+                "title": "Resolución de problemas", 
+                "content": "Habilidad para identificar y resolver problemas de manera eficiente y efectiva."
+            },
+            "creativity": {
+                "title": "Creatividad", 
+                "content": "Capacidad para aportar ideas innovadoras y soluciones creativas a los proyectos."
+            },
+            "critical_thinking": {
+                "title": "Pensamiento crítico", 
+                "content": "Habilidad para analizar y evaluar situaciones complejas y tomar decisiones fundamentadas."
+            }
         }
     },
     "pages": {
