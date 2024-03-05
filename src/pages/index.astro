@@ -9,6 +9,8 @@ import Template from "../layouts/template.astro";
 import Linkedin from './../components/icons/linkedin.astro'
 import Github from './../components/icons/github.astro'
 import Experience from './../components/experience.astro'
+import DeveloperIcon from '../../public/assets/images/developer.webp'
+import { Image } from "astro:assets";
 
 ---
 
@@ -34,10 +36,12 @@ import Experience from './../components/experience.astro'
 
 		</article>
 
-		<img 
+		<Image 
 			draggable="false"
 			class="w-full lg:w-1/2"
-			src="https://static.vecteezy.com/system/resources/previews/011/153/363/original/3d-web-developer-working-on-project-illustration-png.png"
+			loading="eager"
+			src={ DeveloperIcon }
+			alt="Developer icon"
 		/>
 	</section>
 
