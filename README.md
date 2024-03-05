@@ -19,8 +19,3 @@ Run follow command to generate routes
 ```
 npx astro-i18next generate
 ```
-
-## Working on features
-
-- Image optimization
-- Footer
