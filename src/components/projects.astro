@@ -7,16 +7,18 @@ import Pill from "./pill.astro";
 import PortalEmpresarial from './../../public/assets/images/portal-empresarial.png'
 import Codishare from './../../public/assets/images/codishare.png'
 import { Image } from "astro:assets";
+import { t } from 'i18next'
+import { Trans } from "astro-i18next/components";
 
 
 const status = {
     done: {
-        label: "Finalizado", 
+        label: t('components.projects.status.done'), 
         ball: "bg-green-500 group-hover:bg-green-700 transition-all",
         box: "bg-green-500/10 group border-green-500 cursor-pointer select-none hover:border-green-700 transition-all"
     }, 
     working_on: {
-        label: "En desarrollo", 
+        label: t('components.projects.status.working_on'), 
         ball: "bg-orange-500 group-hover:bg-orange-700 transition-all",
         box: "bg-orange-500/10 group border-orange-500 cursor-pointer select-none hover:border-orange-700 transition-all"
     }
@@ -24,20 +26,20 @@ const status = {
 
 const projects = [
     {
-        "label": "Portal Empresarial - Monlau Group", 
+        "label": t('components.projects.elements.portal.title'), 
         "image": PortalEmpresarial,
         "status": status.done,
         "tags": [Laravel, Tailwindcss], 
-        "description": "Aplicativo para la gestión simulada de empresas y entornos de mercado en colaboración con Monlau Group",
+        "description": t('components.projects.elements.portal.description'),
         "url": "https://portalempresarial.alumnes-monlau.com", 
         "code": "https://github.com/Xavimc04/company-simulator"
     },
     {
-        "label": "Codishare", 
+        "label": t('components.projects.elements.codishare.title'), 
         "image": Codishare,
         "status": status.working_on,
         "tags": [Nextjs, Tailwindcss, Typescript], 
-        "description": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas, las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",
+        "description": t('components.projects.elements.codishare.description'),
         "url": "https://codishare.vercel.app", 
         "code": "https://github.com/codishare/codishare"
     } 
@@ -47,11 +49,13 @@ const projects = [
 
 <section id="projects" class="w-full px-10 md:px-0 md:w-2/3 lg:w-3/4 xl:w-2/3 flex flex-col gap-2 mb-32">
     <h2 class="text-5xl font-bold py-3">
-        Proyectos <span class="underline underline-offset-3 decoration-8 decoration-blue-600">personales</span>
+        <Trans i18nKey="components.projects.title">
+            Proyectos <span class="underline underline-offset-3 decoration-8 decoration-blue-600">personales</span>
+        </Trans>
     </h2>
 
     <p class="text-gray-400">
-        Estas son parte las tecnologías, lenguajes y frameworks que mas he consumido durante mis años de experiencia. 
+        { t('components.projects.description') }
     </p>
 
     <div class="mt-5 flex flex-col gap-7">
@@ -93,11 +97,11 @@ const projects = [
 
                         <div class="flex items-center gap-4">
                             <a href={ url } target="_blank" class="text-blue-500 hover:underline">
-                                Ver proyecto
+                                { t('components.projects.actions.url') }
                             </a>
 
                             <a href={ code } target="_blank" class="text-blue-500 hover:underline">
-                                Ver código
+                                { t('components.projects.actions.source') }
                             </a>
                         </div>
                     </section>

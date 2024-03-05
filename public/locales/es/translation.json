@@ -72,6 +72,28 @@
                     "description": "En mi travesía hacia el desarrollo de aplicaciones web, previamente me embarqué en un camino autodidacta que abarcó más de 2 años. Durante este tiempo, me sumergí en la exploración independiente de lenguajes de programación, frameworks y metodologías de desarrollo. A medida que adquiría experiencia, comprendí la importancia de formalizar mis conocimientos y habilidades para acceder al mercado laboral de manera más sólida. Fue en este contexto que decidí ingresar al ciclo de desarrollo de aplicaciones web. Mi objetivo principal era complementar mi aprendizaje autodidacta con una formación más estructurada y académica"
                 }
             }
+        },
+        "projects": {
+            "title": "Proyectos <0>destacados</0>",
+            "description": "Mis últimos proyectos destacados, por motivos de privacidad no puedo mostrar todos los proyectos en los que he trabajado laboralmente.",
+            "status": {
+                "working_on": "En desarrollo", 
+                "done": "Finalizado"
+            },
+            "elements": {
+                "portal": {
+                    "title": "Portal Empresarial", 
+                    "description": "Aplicativo para la gestión simulada de empresas y entornos de mercado en colaboración con Monlau Group"
+                },
+                "codishare": {
+                    "title": "Codishare", 
+                    "description": "Una plataforma de código abierto para compartir y colaborar en proyectos de desarrollo"
+                }
+            },
+            "actions": {
+                "url": "Ver proyecto",
+                "source": "Ver código fuente"
+            }
         }
     },
     "pages": {
