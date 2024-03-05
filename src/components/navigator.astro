@@ -17,6 +17,15 @@ import { t } from "i18next";
         <h1>Xavier Morell</h1>
     </section>
 
+    <!-- @ Url section -->
+    <ul id="urls" class="hidden lg:flex items-center justify-center w-2/4 gap-6">
+        <li><a data-target="about" class="hover:text-emerald-400 transition-all">{ t('components.header.urls.about') }</a></li>
+        <li><a data-target="experience" class="hover:text-emerald-400 transition-all">{ t('components.header.urls.experience') }</a></li>
+        <li><a data-target="projects" class="hover:text-emerald-400 transition-all">{ t('components.header.urls.projects') }</a></li>
+        <li><a data-target="skills" class="hover:text-emerald-400 transition-all">{ t('components.header.urls.skills') }</a></li>
+        <li><a data-target="contact" class="hover:text-emerald-400 transition-all">{ t('components.header.urls.contact') }</a></li> 
+    </ul>
+
     <!-- @ Right section -->
     <section class="hidden w-1/4 lg:flex justify-end gap-4">
         <LanguageSelector showFlag={ true } class="bg-transparent" />
