@@ -9,5 +9,12 @@
                 "contact": "Contacto"
             }
         }
+    },
+    "pages": {
+        "index": {
+            "welcome": "Bienvenido a mi sitio web personal", 
+            "title": "Soy <0>Xavier Morell</0>, desarrollador <1>fullstack</1>",
+            "subtitle": "Nacido y residente en Barcelona, especializado en el desarrollo integral de aplicaciones web y móviles. Fanático de la tecnología y el desarrollo de software."
+        }
     }
 }
