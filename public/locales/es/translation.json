@@ -101,7 +101,7 @@
         },
         "contact": {
             "title": "Contáctame",
-            "description": "En caso de querer contactar conmigo puedes rellenar este formulario, con 3 simples campos me pondré en contacto contigo con la mayor brevedad posible. En cualquiera de los casos, ¡te dejo otros medios de contacto desde los que podrás encontrarme!",
+            "description": "En caso de querer contactar conmigo puedes hacerlo a través de mis redes o enviandome un correo electrónico, ubicado en el módulo 'sobre mí'. Estaré encantado de atenderte.",
             "form": {
                 "name": "Nombre",
                 "email": "Correo electrónico", 

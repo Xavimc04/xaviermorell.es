@@ -101,7 +101,7 @@
         },
         "contact": {
             "title": "Contact me",
-            "description": "If you want to get in touch with me, you can fill out this form. With just 3 simple fields, I will contact you as soon as possible. In any case, I leave you other contact methods through which you can find me!",
+            "description": "If you want to contact me, you can do so through my networks or by sending me an email, located in the 'about me' module. I will be happy to assist you.",
             "form": {
                 "name": "Name",
                 "email": "Email",
