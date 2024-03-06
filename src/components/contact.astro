@@ -13,61 +13,13 @@ import { t } from 'i18next'
         { t('components.contact.title') }
     </h2>
 
-    <div class="flex items-start gap-7 flex-col lg:flex-row">
-        <article class="flex-1 flex flex-col gap-5 mb-10 lg:mb-0">
-            <p class="text-gray-400">
-                { t('components.contact.description') }
-            </p>
+    <p class="text-gray-400 lg:w-1/2">
+        { t('components.contact.description') }
+    </p>
 
-            <div class="flex items-center gap-4">
-                <Linkedin />
-                <Github />
-            </div>
-        </article>
-
-        <form 
-            class="w-full lg:w-1/2 flex flex-col gap-8"
-            method="POST"
-            onsubmit="event.preventDefault()"
-        >
-            <label class="flex flex-col gap-3">
-                <p>
-                    { t('components.contact.form.name') } <span class="text-yellow-500">*</span>
-                </p>
-
-                <input
-                    type="text"
-                    class="border bg-transparent p-3 rounded-sm"
-                    placeholder={ t('components.contact.form.placeholder_name') }
-                    name="name"
-                />
-            </label>
-
-            <label class="flex flex-col gap-3">
-                <p>
-                    { t('components.contact.form.email') } <span class="text-yellow-500">*</span>
-                </p>
-
-                <input
-                    type="email"
-                    class="border bg-transparent p-3 rounded-sm"
-                    placeholder={ t('components.contact.form.placeholder_email') }
-                    name="email"
-                />
-            </label>
-
-            <label class="flex flex-col gap-3">
-                <p>
-                    { t('components.contact.form.reason') }
-                </p>
-
-                <textarea class="border bg-transparent p-3 rounded-sm" name="reason" placeholder="..."></textarea>
-            </label>
-
-            <button type="submit" class="p-3 border bg-blue-600 border-blue-600 hover:opacity-90 transition-all text-white rounded-sm">
-                { t('components.contact.form.submit') }
-            </button>
-        </form>
+    <div class="flex items-center gap-4 mt-7">
+        <Linkedin />
+        <Github />
     </div>
 </section>
 
