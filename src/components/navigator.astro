@@ -20,37 +20,8 @@ import { Image } from "astro:assets";
         <h1>Xavier Morell</h1>
     </section>
 
-    <!-- @ Url section -->
-    <ul id="urls" class="hidden lg:flex items-center justify-center w-2/4 gap-6">
-        <li><a class="hover:text-emerald-400 transition-all" href="#about">{ t('components.header.urls.about') }</a></li>
-        <li><a class="hover:text-emerald-400 transition-all" href="#experience">{ t('components.header.urls.experience') }</a></li>
-        <li><a class="hover:text-emerald-400 transition-all" href="#projects">{ t('components.header.urls.projects') }</a></li>
-        <li><a class="hover:text-emerald-400 transition-all" href="#skills">{ t('components.header.urls.skills') }</a></li>
-        <li><a class="hover:text-emerald-400 transition-all" href="#contact">{ t('components.header.urls.contact') }</a></li> 
-    </ul>
-
     <!-- @ Right section -->
-    <section class="hidden w-1/4 lg:flex justify-end gap-4">
+    <section class="justify-end gap-4">
         <LanguageSelector showFlag={ true } class="bg-transparent" />
-    </section>
-
-    <!-- @ Mobile section -->
-    <section id="mobile-action" class="flex lg:hidden flex-1 justify-end">
-        <button>
-            <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                class="h-6 w-6" 
-                fill="none" 
-                viewBox="0 0 24 24" 
-                stroke="currentColor"
-            >
-                <path 
-                    stroke-linecap="round" 
-                    stroke-linejoin="round" 
-                    stroke-width="2" 
-                    d="M4 6h16M4 12h16m-7 6h7"
-                />
-            </svg>
-        </button>
     </section>
 </nav>
