@@ -49,27 +49,27 @@
                 "avannubo": {
                     "position": "Fullstack Developer",
                     "date": "February 2023 - Present",
-                    "description": "In my journey as a fullstack developer, I began by focusing on the development of internal applications for the company. As I gained experience, I expanded my scope to the comprehensive creation of applications for external clients. Progressively, I took on more complex roles, performing tasks that included task management, requirements gathering, and the complete development of platforms."
+                    "description": "Laravel, Tailwindcss, Livewire, Git, Gitlab, Docker, MySQL, PostgreSQL, Typescript, React, React Native, NodeJs, Express, project management, requirements gathering, task assignment."
                 },
                 "sosmatic": {
                     "position": "Helpdesk",
                     "date": "October 2022 - February 2023",
-                    "description": "During my work experience, I played the role of helpdesk support, managing calls and incident reports for level 1 issues for multiple subcontracted companies. My responsibility covered over 7 services, each belonging to diverse companies. My tasks included problem resolution related to fiber optics, radio links, roaming, mobile data, service inquiries, and fixed-line telephony, among others."
+                    "description": "Technical support, incident resolution, MySIM, customer interaction."
                 },
                 "freelancer": {
                     "position": "Developer",
                     "date": "October 2020 - October 2022",
-                    "description": "After immersing myself in the development field, I started my journey as a freelancer while continuing my education. I provided services to clients on the Cfx.re platform, also known as FiveM. In this context, I developed Lua scripts aimed at enhancing the gaming experience in the roleplay environment. Over time, I expanded my skills by integrating complex web interfaces synchronized with the game using jQuery and ReactJs. Simultaneously, I designed external platforms for game server management. At a certain point, I decided to make the full leap into web development, which involved closing my services as a freelancer to dedicate my time exclusively to the learning process."
+                    "description": "Lua, jQuery, HTML, CSS, Javascript, React, MySQL."
                 },
                 "smx": {
                     "position": "Microcomputer Systems and Networks",
                     "date": "September 2019 - June 2021",
-                    "description": "During my training in microcomputer systems and networks, I acquired specialized skills in the configuration and maintenance of systems, as well as in network management. This cycle provided me with a deep understanding of microcomputer infrastructure, from problem-solving in hardware to the implementation of network solutions."
+                    "description": "VMWare, Windows Server, Ubuntu, VirtualBox, Office365."
                 },
                 "daw": {
                     "position": "Web Application Development",
                     "date": "September 2021 - June 2023",
-                    "description": "In my journey toward web application development, I initially embarked on a self-taught path that spanned over 2 years. During this time, I immersed myself in the independent exploration of programming languages, frameworks, and development methodologies. As I gained experience, I understood the importance of formalizing my knowledge and skills to enter the job market more solidly. It was in this context that I decided to enter the web application development cycle. My main goal was to complement my self-taught learning with a more structured and academic training."
+                    "description": "PHP, Javascript, Tailwindcss, Java, MySQL, Docker."
                 }
             }
         },
