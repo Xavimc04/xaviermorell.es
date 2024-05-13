@@ -63,12 +63,12 @@
                 },
                 "smx": {
                     "position": "Sistemas Microinformáticos y Redes",
-                    "date": "Septiembre 2019 - Junio 2021",
+                    "date": "Septiembre 2020 - Junio 2022",
                     "description": "VMWare, Windows Server, Ubuntu, VirtualBox, Office365"
                 },
                 "daw": {
                     "position": "Desarrollo de Aplicaciones Web",
-                    "date": "Septiembre 2021 - Junio 2023",
+                    "date": "Septiembre 2022 - Junio 2024",
                     "description": "PHP, Javascript, Tailwindcss, Java, MySQL, Docker"
                 }
             }
