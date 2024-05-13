@@ -5,10 +5,14 @@ import Tailwindcss from "./icons/tailwindcss.astro";
 import Typescript from "./icons/typescript.astro";
 import Pill from "./pill.astro";
 import PortalEmpresarial from './../../public/assets/images/portal-empresarial.png'
-import Codishare from './../../public/assets/images/codishare.png'
+import Pearly from './../../public/assets/images/pearly.es.png'
+import Luckcommunity from './../../public/assets/images/luckcommunity.png'
+import Wevvi from './../../public/assets/images/wevvi.es.png'
 import { Image } from "astro:assets";
 import { t } from 'i18next'
 import { Trans } from "astro-i18next/components";
+import Javascript from "./icons/javascript.astro";
+import Jquery from "./icons/jquery.astro";
 
 
 const status = {
@@ -35,14 +39,30 @@ const projects = [
         "code": "https://github.com/Xavimc04/company-simulator"
     },
     {
-        "label": t('components.projects.elements.codishare.title'), 
-        "image": Codishare,
+        "label": t('components.projects.elements.pearly.title'), 
+        "image": Pearly,
+        "status": status.done,
+        "tags": [Javascript, Jquery], 
+        "description": t('components.projects.elements.pearly.description')
+    },
+    {
+        "label": t('components.projects.elements.luckcommunity.title'), 
+        "image": Luckcommunity,
+        "status": status.done,
+        "tags": [Nextjs, Tailwindcss, Typescript], 
+        "description": t('components.projects.elements.luckcommunity.description'),
+        "url": "https://luckccommunity.es", 
+        "code": "https://github.com/Xavimc04/cfx-server-manager"
+    },
+    {
+        "label": t('components.projects.elements.wevvi.title'), 
+        "image": Wevvi,
         "status": status.working_on,
         "tags": [Nextjs, Tailwindcss, Typescript], 
-        "description": t('components.projects.elements.codishare.description'),
-        "url": "https://codishare.vercel.app", 
-        "code": "https://github.com/codishare/codishare"
-    } 
+        "description": t('components.projects.elements.wevvi.description'),
+        "url": "https://wevvi.es", 
+        "code": "https://github.com/Xavimc04/wevvi.es"
+    },
 ]
 
 ---

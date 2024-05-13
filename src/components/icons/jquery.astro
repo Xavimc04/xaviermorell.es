@@ -1,4 +1,12 @@
-<svg width="90px" height="90px" viewBox="0 -198 512 512" xmlns="http://www.w3.org/2000/svg" fill="#ffffff">
+--- 
+
+const {
+    width, height
+} = Astro.props
+
+---
+
+<svg width={ width || '90px' } height={ height || '90px' } viewBox="0 -198 512 512" xmlns="http://www.w3.org/2000/svg" fill="#ffffff">
 
 <g id="SVGRepo_bgCarrier" stroke-width="0"/>
 
