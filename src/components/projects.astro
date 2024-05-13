@@ -13,6 +13,8 @@ import { t } from 'i18next'
 import { Trans } from "astro-i18next/components";
 import Javascript from "./icons/javascript.astro";
 import Jquery from "./icons/jquery.astro";
+import Mysql from "./icons/mysql.astro";
+import Postgres from "./icons/postgres.astro";
 
 
 const status = {
@@ -33,7 +35,7 @@ const projects = [
         "label": t('components.projects.elements.portal.title'), 
         "image": PortalEmpresarial,
         "status": status.done,
-        "tags": [Laravel, Tailwindcss], 
+        "tags": [Laravel, Tailwindcss, Mysql], 
         "description": t('components.projects.elements.portal.description'),
         "url": "https://portalempresarial.alumnes-monlau.com", 
         "code": "https://github.com/Xavimc04/company-simulator"
@@ -49,7 +51,7 @@ const projects = [
         "label": t('components.projects.elements.luckcommunity.title'), 
         "image": Luckcommunity,
         "status": status.done,
-        "tags": [Nextjs, Tailwindcss, Typescript], 
+        "tags": [Nextjs, Tailwindcss, Typescript, Postgres], 
         "description": t('components.projects.elements.luckcommunity.description'),
         "url": "https://luckccommunity.es", 
         "code": "https://github.com/Xavimc04/cfx-server-manager"
@@ -58,7 +60,7 @@ const projects = [
         "label": t('components.projects.elements.wevvi.title'), 
         "image": Wevvi,
         "status": status.working_on,
-        "tags": [Nextjs, Tailwindcss, Typescript], 
+        "tags": [Nextjs, Tailwindcss, Typescript, Postgres], 
         "description": t('components.projects.elements.wevvi.description'),
         "url": "https://wevvi.es", 
         "code": "https://github.com/Xavimc04/wevvi.es"
@@ -116,13 +118,17 @@ const projects = [
                         </p>
 
                         <div class="flex items-center gap-4">
-                            <a href={ url } target="_blank" class="text-blue-500 hover:underline">
-                                { t('components.projects.actions.url') }
-                            </a>
+                            {
+                                url && <a href={ url } target="_blank" class="text-blue-500 hover:underline">
+                                    { t('components.projects.actions.url') }
+                                </a>
+                            }
 
-                            <a href={ code } target="_blank" class="text-blue-500 hover:underline">
-                                { t('components.projects.actions.source') }
-                            </a>
+                            {
+                                code && <a href={ code } target="_blank" class="text-blue-500 hover:underline">
+                                    { t('components.projects.actions.source') }
+                                </a>
+                            }
                         </div>
                     </section>
                 </article>

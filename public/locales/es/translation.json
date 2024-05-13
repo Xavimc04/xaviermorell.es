@@ -88,6 +88,18 @@
                 "codishare": {
                     "title": "Codishare", 
                     "description": "Una plataforma de código abierto para compartir y colaborar en proyectos de desarrollo"
+                },
+                "pearly": {
+                    "title": "Pearly", 
+                    "description": "Desarrollo de Liquid integrado en una tienda de Shopify, se han utilizado tecnologías como Javascript y CSS para poder dinamizar el contenido del sitio para un cliente"
+                },
+                "luckcommunity": {
+                    "title": "LuckCommunity", 
+                    "description": "Aplicativo completo para la gestión de comunidad de GTA Roleplay, integración de diferentes sistemas y funcionalidades como tienda en línea, pagos a través de Paypal, foro con administración y gestión de contenido para un cliente"
+                },
+                "wevvi": {
+                    "title": "Wevvi", 
+                    "description": "Página completa para la gestión de wevvi, un proyecto personal donde pretendo emprender en el mundo de la tecnología y el desarrollo de software ofreciendo servicios de desarrollo web y móvil a empresas y particulares"
                 }
             },
             "actions": {

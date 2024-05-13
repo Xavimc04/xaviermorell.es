@@ -88,6 +88,18 @@
                 "codishare": {
                     "title": "Codishare",
                     "description": "An open-source platform for sharing and collaborating on development projects."
+                },
+                "pearly": {
+                    "title": "Pearly",
+                    "description": "Development of Liquid integrated into a Shopify store, technologies such as Javascript and CSS have been used to dynamize the content of the site for a client"
+                },
+                "luckcommunity": {
+                    "title": "LuckCommunity",
+                    "description": "Complete application for the management of a GTA Roleplay community, integration of different systems and functionalities such as online store, payments through Paypal, forum with administration and content management for a client"
+                },
+                "wevvi": {
+                    "title": "Wevvi",
+                    "description": "Full page for managing wevvi, a personal project where I intend to venture into the world of technology and software development offering web and mobile development services to companies and individuals"
                 }
             },
             "actions": {
