@@ -8,7 +8,7 @@ import Template from "../layouts/template.astro";
 import Linkedin from "./../components/icons/linkedin.astro";
 import Github from "./../components/icons/github.astro";
 import Experience from "./../components/experience.astro";
-import DeveloperIcon from "../../public/assets/images/developer.webp";
+import DeveloperIcon from "../../public/assets/images/gradient-profile-image.png";
 import { Image } from "astro:assets";
 import { Trans } from "astro-i18next/components";
 import { t, changeLanguage } from "i18next";
@@ -42,7 +42,11 @@ changeLanguage("es");
 
 		<Image 
 			draggable="false"
-			class="w-full lg:w-1/2"
+			class="w-full lg:w-1/2 p-10"
+			style={{
+				// @ Set bottom image with mask as transparent
+				maskImage: "linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1) 50%)"
+			}}
 			loading="eager"
 			src={ DeveloperIcon }
 			alt="Developer icon"
